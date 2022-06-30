@@ -8,15 +8,8 @@ public class User {
     public string Name { get; set; }
     public string PasswordHash { get; set; }
     public string PrimaryGroup { get; set; }  
-    public List<Group> Groups { get; set; }
-    public class Group {
-        public string Name { get; set; }
-    }
-    public List<SshAuthorizedKey> SshAuthorizedKeys { get; set; }
-
-    public class SshAuthorizedKey {
-        public string Key { get; set; } 
-    }
+    public List<string> Groups { get; set; }
+    public List<string> SshAuthorizedKeys { get; set; }
 }
 
 public class Passwd {
